@@ -1,7 +1,7 @@
-import { Text } from "./Text";
+import { Text } from "./index";
 
 export default {
-  title: 'Components/Text',
+  title: 'Typography/Text',
   component: Text,
 }
 

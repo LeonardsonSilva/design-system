@@ -25,7 +25,7 @@ export function Modal(){
       <Button variant="outlined" onClick={handleClickOpen}>
         Open form dialog
       </Button>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={open} onClose={handleClose} fullWidth>
         <DialogTitle>
           <Typography variant="h6" sx={{ ml: 2 }}>
             Título da Modal
@@ -33,7 +33,7 @@ export function Modal(){
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
-            <Alert color='warning'>
+            <Alert color='info'>
               To subscribe to this website, please enter your email address here. We
               will send updates occasionally.
             </Alert>
@@ -47,38 +47,11 @@ export function Modal(){
             fullWidth
             variant="standard"
           />
-          <TextField
-            autoFocus
-            margin="dense"
-            id="name"
-            label="Email Address"
-            type="email"
-            fullWidth
-            variant="standard"
-          />
-          <TextField
-            autoFocus
-            margin="dense"
-            id="name"
-            label="Email Address"
-            type="email"
-            fullWidth
-            variant="standard"
-          />
-          <TextField
-            autoFocus
-            margin="dense"
-            id="name"
-            label="Email Address"
-            type="email"
-            fullWidth
-            variant="standard"
-          />
         </DialogContent>
         <DialogActions>
           <Button
             variant='contained'
-            color='secondary'
+            color='inherit'
             onClick={handleClose}
           >
             Cancel
